@@ -1,0 +1,27 @@
+This page walk through installation process of SMWBP components
+
+= Basic Installation =
+1.1 Install Mediawiki (MW, 1.13)
+  svn checkout http://svn.wikimedia.org/svnroot/mediawiki/branches/REL1_13/phase3
+
+1.2 Install Semantic MediaWiki (SMW, 1.4)
+  svn checkout http://svn.wikimedia.org/svnroot/mediawiki/trunk/extensions/SemanticMediaWiki/
+
+
+= MW Extensions =
+2.1 VariablesExtension (http://www.mediawiki.org/wiki/Extension:Variables)
+
+
+2.2 StringFunctions (http://www.mediawiki.org/wiki/StringFunctions)
+
+  svn checkout http://svn.wikimedia.org/svnroot/mediawiki/trunk/extensions/StringFunctions/
+
+2.3 ParserFunctions (http://www.mediawiki.org/wiki/ParserFunctions)
+
+
+= SMW Extensions =
+3.1 Semantic Forms 
+  svn checkout http://svn.wikimedia.org/svnroot/mediawiki/trunk/extensions/SemanticForms/
+
+3.2 Semantic Result Format
+  svn checkout http://svn.wikimedia.org/svnroot/mediawiki/trunk/extensions/SemanticResultFormats/
