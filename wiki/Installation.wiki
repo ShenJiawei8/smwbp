@@ -2,7 +2,7 @@ This page walk through installation process of SMWBP components
 
 = Installation =
 
-== Core Component ==
+== Core Components ==
 1.1 Install Mediawiki (MW, 1.13)
   svn checkout http://svn.wikimedia.org/svnroot/mediawiki/branches/REL1_13/phase3
 
@@ -20,6 +20,9 @@ This page walk through installation process of SMWBP components
 2.3 ParserFunctions (http://www.mediawiki.org/wiki/Extension:ParserFunctions)
   svn checkout http://svn.wikimedia.org/svnroot/mediawiki/trunk/extensions/ParserFunctions/
 
+2.4 CategoryTree (http://www.mediawiki.org/wiki/Extension:CategoryTree)
+  svn checkout http://svn.wikimedia.org/svnroot/mediawiki/trunk/extensions/CategoryTree/
+
 == SMW Extensions ==
 3.1 Semantic Forms 
   svn checkout http://svn.wikimedia.org/svnroot/mediawiki/trunk/extensions/SemanticForms/
@@ -30,11 +33,12 @@ This page walk through installation process of SMWBP components
 = Update =
 move the the current wiki home, and run the following
 {{{
- svn update .
- svn update extensions/SemanticMediaWiki/ 
- svn update extensions/Variables/ 
- svn update extensions/StringFunctions/ 
- svn update extensions/ParserFunctions/ 
- svn update extensions/SemanticForms/ 
- svn update extensions/SemanticResultFormats/ 
+svn update .
+svn update extensions/SemanticMediaWiki/ 
+svn update extensions/Variables/ 
+svn update extensions/StringFunctions/ 
+svn update extensions/ParserFunctions/ 
+svn update extensions/CategoryTree/ 
+svn update extensions/SemanticForms/ 
+svn update extensions/SemanticResultFormats/ 
 }}}
