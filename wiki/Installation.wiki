@@ -1,6 +1,8 @@
 This page walk through installation process of SMWBP components
 
-= Basic Installation =
+= Installation =
+
+== Core Component ==
 1.1 Install Mediawiki (MW, 1.13)
   svn checkout http://svn.wikimedia.org/svnroot/mediawiki/branches/REL1_13/phase3
 
@@ -8,20 +10,31 @@ This page walk through installation process of SMWBP components
   svn checkout http://svn.wikimedia.org/svnroot/mediawiki/trunk/extensions/SemanticMediaWiki/
 
 
-= MW Extensions =
+== MW Extensions ==
 2.1 VariablesExtension (http://www.mediawiki.org/wiki/Extension:Variables)
+  svn checkout http://smwbp.googlecode.com/svn/trunk/extensions/Variables/
 
-
-2.2 StringFunctions (http://www.mediawiki.org/wiki/StringFunctions)
-
+2.2 StringFunctions (http://www.mediawiki.org/wiki/Extension:StringFunctions)
   svn checkout http://svn.wikimedia.org/svnroot/mediawiki/trunk/extensions/StringFunctions/
 
-2.3 ParserFunctions (http://www.mediawiki.org/wiki/ParserFunctions)
+2.3 ParserFunctions (http://www.mediawiki.org/wiki/Extension:ParserFunctions)
+  svn checkout http://svn.wikimedia.org/svnroot/mediawiki/trunk/extensions/ParserFunctions/
 
-
-= SMW Extensions =
+== SMW Extensions ==
 3.1 Semantic Forms 
   svn checkout http://svn.wikimedia.org/svnroot/mediawiki/trunk/extensions/SemanticForms/
 
 3.2 Semantic Result Format
   svn checkout http://svn.wikimedia.org/svnroot/mediawiki/trunk/extensions/SemanticResultFormats/
+
+= Update =
+move the the current wiki home, and run the following
+<pre>
+ svn update .
+ svn update extensions/SemanticMediaWiki/
+ svn update extensions/Variables/
+ svn update extensions/StringFunctions/
+ svn update extensions/ParserFunctions/
+ svn update extensions/SemanticForms/
+ svn update extensions/SemanticResultFormats/
+</pre>
