@@ -31,10 +31,10 @@ This page walk through installation process of SMWBP components
 move the the current wiki home, and run the following
 <pre>
  svn update .
- svn update extensions/SemanticMediaWiki/
- svn update extensions/Variables/
- svn update extensions/StringFunctions/
- svn update extensions/ParserFunctions/
- svn update extensions/SemanticForms/
- svn update extensions/SemanticResultFormats/
+ svn update extensions/SemanticMediaWiki
+ svn update extensions/Variables
+ svn update extensions/StringFunctions
+ svn update extensions/ParserFunctions
+ svn update extensions/SemanticForms
+ svn update extensions/SemanticResultFormats
 </pre>
