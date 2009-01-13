@@ -4,11 +4,11 @@
 Li Ding, Jie Bao, Evan Patton, Jin-guang Zheng, Rui Huang
 
 =Tasks=
- * [SVN Setup for SWM]: to provide a collection of simple and customized shell scripts(bash) that use svn to install MW, SMW and extensions.
- * [SBP Templates]]
-  * [SBP FIT] to provide convenient foundational wiki templates for SMW content generation
-  * [SBP o], to provide wiki templates for ontology management, including thing, class, property, and ontology
-  * [SBP i], to provide wiki templates for data objects management. We currently focus on group related concepts, including person, project, publication, organization, event, tag and etc.
+ * [SVN_Setup_for_SWM]: to provide a collection of simple and customized shell scripts(bash) that use svn to install MW, SMW and extensions.
+ * [SBP_Templates]
+  * [SBP_FIT] to provide convenient foundational wiki templates for SMW content generation
+  * [SBP_o], to provide wiki templates for ontology management, including thing, class, property, and ontology
+  * [SBP_i], to provide wiki templates for data objects management. We currently focus on group related concepts, including person, project, publication, organization, event, tag and etc.
 
 = Design Principles =
  * wiki article can be categorized as: thing, class, property
