@@ -1,10 +1,12 @@
 #summary A brief overview of SMW Best Practice (SWMBP) project
+#labels installation
 
 =Contributors=
 Li Ding, Jie Bao, Evan Patton, Jin-guang Zheng, Rui Huang
 
 =Tasks=
- * [SVN_Setup_for_SWM]: to provide a collection of simple and customized shell scripts(bash) that use svn to install MW, SMW and extensions.
+ * [wiki_installation]: to provide a collection of customized shell scripts(bash) that use svn to install MW, SMW and extensions.
+ * [wiki_help]: to provide a simple tutorial for using wiki, SMW, and their extensions.
  * [SBP_Templates]
   * [SBP_FIT] to provide convenient foundational wiki templates for SMW content generation
   * [SBP_o], to provide wiki templates for ontology management, including thing, class, property, and ontology
