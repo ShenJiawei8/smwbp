@@ -76,5 +76,12 @@ require_once( "extensions/SMWBP/LocalSettings.smwbp.ext.php" );  #recommended MW
 {{{
 require_once( "extensions/SMWBP/LocalSettings.smwbp.smwplus.php" );  #SMW+ halo extension
 }}}
+6.4 initialize halo extension
+{{{
+login wiki with administrator account
+follow the link "special pages" (you can see a link on the left of the screen in toolbox)
+follow the link "Admin functions for Semantic MediaWiki"
+click the button "initialize or upgrade database" 
+}}}
 
 hint: you may also browse  [http://smwforum.ontoprise.com/smwforum/index.php/Manual_SMW%2B_Installation SMW+ setup instructions]
