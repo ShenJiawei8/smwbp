@@ -8,7 +8,7 @@ Li Ding, Jie Bao, Evan Patton, Jin-guang Zheng, Rui Huang
  * [wiki_installation]: to provide a collection of customized shell scripts(bash) that use svn to install MW, SMW and extensions.
  * [wiki_help]: to provide a simple tutorial for using wiki, SMW, and their extensions.
  * [SMWBP_Templates]
-  * [SMWBP_i] to provide convenient foundational wiki templates for SMW content generation
+  * [SMWBP_f] to provide convenient foundational wiki templates for SMW content generation
   * [SMWBP_o], to provide wiki templates for ontology management, including thing, class, property, and ontology
   * [SMWBP_i], to provide wiki templates for data objects management. We currently focus on group related concepts, including person, project, publication, organization, event, tag and etc.
 
