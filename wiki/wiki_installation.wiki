@@ -58,7 +58,7 @@ require_once( "extensions/SMWBP/LocalSettings.smwbp.smw.php" );  #SMW only
 login wiki with administrator account
 follow the link "special pages" (you can see a link on the left of the screen in toolbox)
 follow the link "Admin functions for Semantic MediaWiki"
-make sure the wiki's database account has additional "create table" and "drop table" privilege on your wiki database.
+make sure the wiki's database account has additional "create table", "alter table" and "drop table" privilege on your wiki database.
 click the button "initialize or upgrade database" 
 }}}
 5.3 (optional) append the following line to the end of LocalSettings.php
