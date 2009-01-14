@@ -28,7 +28,7 @@ cd <WWW-ROOT>/wiki
 {{{
 svn checkout http://smwbp.googlecode.com/svn/trunk/setup
 mv setup/*  .
-rmdir setup
+rm -rf setup
 chmod +x *.sh
 }}}
 hint: you may review the setup scripts at http://code.google.com/p/smwbp/source/browse/#svn/trunk/setup
