@@ -48,18 +48,33 @@ bash# chmod a+w config/
 mv config/LocalSettings.php .
 }}}
 
-5. append the following lines  to the end of LocalSettings.php
+5. to install SMW, do the following steps
+5.1 append the following line to the end of LocalSettings.php
 {{{
 require_once( "extensions/SMWBP/LocalSettings.smwbp.smw.php" );  #SMW only
-require_once( "extensions/SMWBP/LocalSettings.smwbp.ext.php" );  #optional, recommended MW ans SMW extensions
 }}}
-hint: you may also browse [http://semantic-mediawiki.org/wiki/Help:Installation SMW setup instructions] 
-
-6. (only if you used setup-smwplus.sh) append the following lines  to the end of LocalSettings.php
+5.2 initialize SMW, see also http://semantic-mediawiki.org/wiki/Help:Installation SMW setup instructions
 {{{
-require_once( "extensions/SMWBP/LocalSettings.smwbp.smw.php" );  #SMW only
-require_once( "extensions/SMWBP/LocalSettings.smwbp.ext.php" );  #optional, recommended MW ans SMW extensions
-require_once( "extensions/SMWBP/LocalSettings.smwbp.smwplus.php" );  #SMW+ only
+login wiki with administrator account
+follow the link "special pages" (you can see a link on the left of the screen in toolbox)
+follow the link "Admin functions for Semantic MediaWiki"
+make sure the wiki's database account has additional "create table" and "drop table" privilege on your wiki database.
+click the button "initialize or upgrade database" 
+}}}
+5.3 (optional) append the following line to the end of LocalSettings.php
+{{{
+require_once( "extensions/SMWBP/LocalSettings.smwbp.ext.php" );  #recommended MW ans SMW extensions
+}}}
+
+6. to install SMW with Halo Extensions 
+6.1 your wiki should be setup using setup-smwplus.sh
+{{{
+./setup-smwplus.sh install <MY-WIKI-PATH>
+}}}
+6.2 follow instructions in 5.1, 5.2, 5.3 
+6.3 append the following line to the end of LocalSettings.php
+{{{
+require_once( "extensions/SMWBP/LocalSettings.smwbp.smwplus.php" );  #SMW+ halo extension
 }}}
 
 hint: you may also browse  [http://smwforum.ontoprise.com/smwforum/index.php/Manual_SMW%2B_Installation SMW+ setup instructions]
