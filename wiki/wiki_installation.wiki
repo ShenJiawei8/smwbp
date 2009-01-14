@@ -39,7 +39,14 @@ hint: you may review the setup scripts at http://code.google.com/p/smwbp/source/
 }}}
 hint: you will see a sequence of shell command executed, they are essentially downloading the wiki codes from several Web hosts.
 
-4. install mediawiki using [http://www.mediawiki.org/wiki/Manual:Config_script MW setup instructions]
+4. install mediawiki using [http://www.mediawiki.org/wiki/Manual:Config_script MW setup instructions]. typically you will need to do the following
+{{{
+bash# cd <MY-WIKI-PATH>
+bash# chmod a+w config/
+...goto your wiki url and use web installation
+...
+mv config/LocalSettings.php .
+}}}
 
 5. append the following lines  to the end of LocalSettings.php
 {{{
