@@ -61,6 +61,7 @@ follow the link "Admin functions for Semantic MediaWiki"
 make sure the wiki's database account has additional "create table", "alter table" and "drop table" privilege on your wiki database.
 click the button "initialize or upgrade database" 
 }}}
+--hint: (i) create table and drop table is required by SMW initialization; (ii) alter table is required by SMW+ initialization.
 5.3 (optional) append the following line to the end of LocalSettings.php
 {{{
 require_once( "extensions/SMWBP/LocalSettings.smwbp.ext.php" );  #recommended MW ans SMW extensions
