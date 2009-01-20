@@ -48,14 +48,14 @@ note:
     * to comment and uncomment code in this configuration file, use 'dnl'. for each line, any text after 'dnl' will be treated as comment.
     * the string (inclusive) surrounded by angle bracket in form of '<...>' is a variable and should be replaced by the reader. For example, reader may replace 'relay-smtp-server' to `smtp.gmail.com' . 
 
-3. create the new sendmail.cf
-{{{
-/sbin/service sendmail stop 
-}}}
-
-4. Then create the file /etc/mail/sendmail.cf
+3. Then create the file /etc/mail/sendmail.cf
 {{{
 m4 /etc/mail/sendmail.mc > /etc/mail/sendmail.cf
+}}}
+
+4. restart sendmail serv
+{{{
+/sbin/service sendmail restart 
 }}}
 
 == Rewrite Email Header ==
@@ -79,7 +79,7 @@ makemap hash /etc/mail/genericstable < /etc/mail/genericstable
 {{{
 vi /etc/mail/sendmail.mc
 }}}
-and add the following lines
+uncomment *FEATURE(masquerade_envelope)* and insert the following lines
 {{{
 FEATURE(masquerade_envelope)dnl
 FEATURE(`genericstable')dnl
