@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary configure sendmail relay for wiki server behind firewall
 #labels Featured,Phase-Deploy
 
  * author: Li Ding
