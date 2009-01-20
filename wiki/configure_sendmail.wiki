@@ -99,12 +99,13 @@ less /var/log/maillog
 ===shell command verification===
 option A. The following command should show a delivery path through the relay smtp server
 {{{
-  /usr/sbin/sendmail -bv <your-mail>@<your-domain> 
+/usr/sbin/sendmail -bv <your-mail>@<your-domain> 
 }}}
 
 option B: Run the following command. You should receive the mail shortly if your configuration is correct.
-  /usr/sbin/sendmail  <account@your-email-server>
-
+{{{
+/usr/sbin/sendmail  <account@your-email-server>
+}}}
  To end email, type the following:
  * press a key 'ENTER' to start a new line, 
  * type a key '.' 
@@ -121,7 +122,7 @@ vi test-sendmail.php
 2. paste the following content
 {{{
 <?php    
-   mail('<account@your-email-server>', 'php sendmail test', 'hello world.');  
+  mail('<account@your-email-server>', 'php sendmail test', 'hello world.');  
 ?>
 }}}
 
