@@ -13,7 +13,14 @@ Interesting enough, we also found that email sent by apache (or any user whose u
 = Details =
 
 ==  Prerequisite ==
- * please make sure that the package *sendmail* is installed (you may use "yum install sendmail") and running as a demon. please check the following
+ * please make sure that the package *sendmail* is installed. the following maybe helpful
+{{{
+yum install sendmail
+yum install sendmail-cf
+yum install m4
+}}}
+
+ * please check the following
 {{{
 /etc/mail/   - there must be some configuration files there
 /sbin/service sendmail restart - we can use this to start and stop sendmail service
