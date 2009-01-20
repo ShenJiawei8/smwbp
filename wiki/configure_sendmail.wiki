@@ -38,15 +38,12 @@ yum install m4
 {{{
 vi /etc/mail/sendmail.mc
 }}}
-uncomment and change the value of SMART_HOST configuration as the following
+find and uncomment the line containing SMART_HOST, change its value to 'relay-smtp-server', which is the preferred smtp server for relaying email.
 {{{
 define(`SMART_HOST', `relay-smtp-server')
 }}}
 note:
-
-    * please replace `relay-smtp-server' with the domain name of the preferred insider smtp server which is going to relay the emails for your local smtp server.
     * to comment and uncomment code in this configuration file, use 'dnl'. for each line, any text after 'dnl' will be treated as comment.
-    * the string (inclusive) surrounded by angle bracket in form of '<...>' is a variable and should be replaced by the reader. For example, reader may replace 'relay-smtp-server' to `smtp.gmail.com' . 
 
 3. Then create the file /etc/mail/sendmail.cf
 {{{
@@ -79,9 +76,12 @@ makemap hash /etc/mail/genericstable < /etc/mail/genericstable
 {{{
 vi /etc/mail/sendmail.mc
 }}}
-uncomment *FEATURE(masquerade_envelope)* and insert the following lines
+find and uncomment *FEATURE(masquerade_envelope)* 
 {{{
 FEATURE(masquerade_envelope)dnl
+}}}
+insert the following lines after that line
+{{{
 FEATURE(`genericstable')dnl
 GENERICS_DOMAIN(`<domain-name-of-local-server')dnl
 }}}
