@@ -8,13 +8,13 @@ Version: 0.2
 
 = Outline =
  * installation
- ** [wiki_installation]: to provide a collection of customized shell scripts(bash) that use svn to install MW, SMW and extensions.
- ** [configure sendmail]: to help 
+  * [wiki_installation]: to provide a collection of customized shell scripts(bash) that use svn to install MW, SMW and extensions.
+  * [configure_sendmail]: to help 
 
  * tutorial
- ** to provide tutorials for using mediawiki.
- ** to provide tutorials for mediawiki extensions
- ** to provide tutorials for semantic mediawiki
+  * to provide tutorials for using mediawiki.
+  * to provide tutorials for mediawiki extensions
+  * to provide tutorials for semantic mediawiki
 
  * SMWBP Templates
   * [smwbp_f], to provide convenient foundational wiki templates for SMW content generation
