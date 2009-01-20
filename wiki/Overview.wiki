@@ -1,12 +1,21 @@
 #summary A brief overview of SMW Best Practice (SWMBP) project
 #labels Featured,Phase-Design
 
-=Contributors=
-Li Ding, Jie Bao, Evan Patton, Jin-guang Zheng, Rui Huang
+=Preface=
+Contributors: Li Ding, Jie Bao, Evan Patton, Jin-guang Zheng, Rui Huang
+Last Modified: Jan 20, 2009
+Version: 0.2
 
-=Tasks=
- * [wiki_installation]: to provide a collection of customized shell scripts(bash) that use svn to install MW, SMW and extensions.
- * [wiki_help]: to provide a simple tutorial for using wiki, SMW, and their extensions.
+= Outline =
+ * installation
+ ** [wiki_installation]: to provide a collection of customized shell scripts(bash) that use svn to install MW, SMW and extensions.
+ ** [configure sendmail]: to help 
+
+ * tutorial
+ ** to provide tutorials for using mediawiki.
+ ** to provide tutorials for mediawiki extensions
+ ** to provide tutorials for semantic mediawiki
+
  * SMWBP Templates
   * [smwbp_f], to provide convenient foundational wiki templates for SMW content generation
   * [smwbp_o], to provide wiki templates for ontology management, including thing, class, property, and ontology
