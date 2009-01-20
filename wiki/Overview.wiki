@@ -1,10 +1,10 @@
-#summary A brief overview of SMW Best Practice (SWMBP) project
+#summary Introduction to SMW Best Practice (SWMBP) project
 #labels Featured,Phase-Design
 
 =Preface=
-Contributors: Li Ding, Jie Bao, Evan Patton, Jin-guang Zheng, Rui Huang
-Last Modified: Jan 20, 2009
-Version: 0.2
+ * Contributors: Li Ding, Jie Bao, Evan Patton, Jin-guang Zheng, Rui Huang
+ * Last Modified: Jan 20, 2009
+ * Version: 0.2
 
 = Outline =
  * installation
