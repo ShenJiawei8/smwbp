@@ -48,9 +48,9 @@ chmod +x *.sh
 hint: you may review the setup scripts at http://code.google.com/p/smwbp/source/browse/#svn/trunk/setup
 
 == B. Install MediaWiki  (MW)==
-*B1*. execute one setup script to install a wiki at < MY-WIKI-PATH > 
+*B1*. execute one setup script to install a wiki at a directory, e.g. test
 {{{
-./setup-mw.sh install <MY-WIKI-PATH>
+./setup-mw.sh install test
 }}}
 hint: you will see a sequence of shell command executed, they are essentially downloading the wiki codes from several Web hosts.
 
