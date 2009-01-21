@@ -97,7 +97,7 @@ note:
  * create table and drop table is required by SMW initialization; 
  * alter table is required by SMW+ initialization.
 
-*C5*. (optional) append the following line to the end of LocalSettings.php
+*C5*. (optional) append the following line to the end of {{{LocalSettings.php}}}
 {{{
 require_once( "extensions/SMWBP/LocalSettings.smwbp.ext.php" );  #recommended MW ans SMW extensions
 }}}
@@ -127,7 +127,7 @@ enableSMWHalo();
 
 *D4*. follow instructions from C4 (initialize SMWPLUS database)
 
-*D5*. (optional) append the following line to the end of LocalSettings.php
+*D5*. (optional) append the following line to the end of {{{LocalSettings.php}}}
 {{{
 require_once( "extensions/SMWBP/LocalSettings.smwbp.ext.php" );  #recommended MW ans SMW extensions
 }}}
@@ -157,7 +157,7 @@ enableSMWHalo();
 
 *E4*. follow instructions from C4 (initialize SMWPLUS database)
 
-*E5*. append the following line to the end of LocalSettings.php
+*E5*. append the following line to the end of {{{LocalSettings.php}}}
 {{{
 require_once( "extensions/SMWBP/LocalSettings.smwbp.ext.php" );  #recommended MW ans SMW extensions
 require_once( "extensions/SMWBP/LocalSettings.smwbp.rpi.php" );  #More extensions
