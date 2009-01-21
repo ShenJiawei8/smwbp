@@ -100,29 +100,36 @@ require_once( "extensions/SMWBP/LocalSettings.smwbp.ext.php" );  #recommended MW
 ./setup-smwplus.sh install <MY-WIKI-PATH>
 }}}
 
-*D2*. follow instructions from C2,C3,C4,C5
+*D2*. follow instructions from B2
 
 *D3*. append the following line to the end of LocalSettings.php
 {{{
 require_once( "extensions/SMWBP/LocalSettings.smwbp.smwplus.php" );  #SMW+ halo extension
 }}}
 
-*D4* follow instructions from *C4". This repetition is needed to initialize halo extension database tables
+*D4*. initialize SMWPLUS database (similar to C4) but the initialize button need to be run twice: the first time for SMW tables, and the second time for SMW+ tables.
+
+*D5*. (optional) append the following line to the end of LocalSettings.php
+{{{
+require_once( "extensions/SMWBP/LocalSettings.smwbp.ext.php" );  #recommended MW ans SMW extensions
+}}}
+
 
 note:
  * you may also check [http://smwforum.ontoprise.com/smwforum/index.php/Manual_SMW%2B_Installation SMW+ setup instructions]
 
 == E. Install Semantic MediaWiki (SWM-RPI configuration)==
+the same as smwplus, just need to replace smwplus with smwrpi.
+
 *E1*. run script setup-smwrpi.sh
 {{{
 ./setup-smwrpi.sh install <MY-WIKI-PATH>
 }}}
 
-*E2*. follow instructions from C2,C3,C4,C5,D3,D4
-
-*E3*. append the following line to the end of LocalSettings.php
+*E2*. follow instructions from D2-D5, and the added lines in LocalSettings are:
 {{{
 require_once( "extensions/SMWBP/LocalSettings.smwbp.smwrpi.php" );  #SMW+ halo extension
+require_once( "extensions/SMWBP/LocalSettings.smwbp.ext.php" );  #recommended MW ans SMW extensions
 }}}
 
 =Update Wiki=
