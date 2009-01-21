@@ -1,3 +1,11 @@
-#summary One-sentence summary of this page.
+#summary Table of Content
 
-test
+1. [introduction]<br/>
+2. installation<br/>
+2.1. [setup_wiki]<br/>
+2.2. [setup_sendmail_relay]<br/>
+3. tutorial<br/>
+3.1. mediawiki_tutorial<br/>
+3.2. semantic_mediawiki_tutorial<br/>
+3.3. SMW+_tutorial<br/>
+3.4. smwbp_tutorial<br/>
