@@ -7,10 +7,10 @@
 
 =Scope=
 This project will cover the following 
- * MediaWiki(MW)
- * Semantic MediaWiki(SMW)
+ * MediaWiki (MW)
+ * Semantic MediaWiki (SMW)
  * Frequent MW and SMW extensions
- * Semantic MediaWiki Plus(SMW+, known as Halo Extension )
+ * Semantic MediaWiki Plus (SMW+, known as Halo Extension )
  * SMWBP (a set of wiki pages, including templates, forms)
 
 This project aims at the following services
