@@ -124,3 +124,15 @@ note:
 {{{
 require_once( "extensions/SMWBP/LocalSettings.smwbp.smwrpi.php" );  #SMW+ halo extension
 }}}
+
+=Update Wiki=
+update installed component (let's use setup-smwrpi.sh as example)
+{{{
+./setup-smwrpi.sh update <MY-WIKI-PATH>
+}}}
+
+OR update and then install newly added packages
+{{{
+./setup-smwrpi.sh update <MY-WIKI-PATH>
+./setup-smwrpi.sh install <MY-WIKI-PATH>
+}}}
