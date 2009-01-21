@@ -5,15 +5,20 @@
 We write several shell scripts (bash) to help users install SMW using SVN client. Such installation allows users to (i) install the latest version of wiki codes and extensions, and (ii) update the installation with the latest patches distributed via SVN.
 
 =Prerequisites=
- * SVN client must be installed. the following code may help you install SVN client (if your linux support yum and you can log in as root).  
+1. check your system has met [http://www.mediawiki.org/wiki/Installation the requirements by mediawiki installation]
+ * mysql 4.0 or higher version has been installed and running. you should have enough privilege to create a database and grant privileges. That ensures that you can install a media wiki database.
+ * apache web server (httpd) 2.0 or higher version has been installed and is running. the root directory is < WWW-ROOT >
+ * PHP 5.0 or higher version has been installed. php-mysql, ... has been configured with apache web server.
+
+2. check if SVN client is installed. to do so, type the following command in console
+{{{
+svn --version
+}}}
+If svn is not installed, you may use the following code (if your linux support yum and you can log in as root).  
 {{{
 yum install subversion
 }}}  
 
-The following requirements are similar to [http://www.mediawiki.org/wiki/Installation the requirements by mediawiki installation]
- * mysql 4.0 or higher version has been installed and running. you should have enough privilege to create a database and grant privileges. That ensures that you can install a media wiki database.
- * apache web server (httpd) 2.0 or higher version has been installed and is running. the root directory is < WWW-ROOT >
- * PHP 5.0 or higher version has been installed. php-mysql, ... has been configured with apache web server.
 
 note: we only support linux with bash scripts
 
