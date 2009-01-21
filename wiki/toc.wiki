@@ -1,5 +1,7 @@
 #summary Table of Content
 
+SMWBP Manual
+
 1. [introduction]<br/>
 2. installation<br/>
 2.1. [setup_wiki]<br/>
