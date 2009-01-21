@@ -24,22 +24,30 @@ mkdir <WWW-ROOT>/wiki
 cd <WWW-ROOT>/wiki
 }}}
 
-2. download all setup scripts (some depends on some others), and make them executable
+2. download all setup scripts (some depends on some others).
+new installation
 {{{
-svn checkout http://smwbp.googlecode.com/svn/trunk/setup
-mv setup/*  .
-rm -rf setup
+svn checkout http://smwbp.googlecode.com/svn/trunk/install
+}}}
+OR update existing installation
+{{{
+svn checkout http://smwbp.googlecode.com/svn/trunk/install
+}}}
+
+3. copy setup scripts and make them executable
+{{{
+cp setup/*  .
 chmod +x *.sh
 }}}
 hint: you may review the setup scripts at http://code.google.com/p/smwbp/source/browse/#svn/trunk/setup
 
-3. execute one setup script to install a wiki at < MY-WIKI-PATH > 
+4. execute one setup script to install a wiki at < MY-WIKI-PATH > 
 {{{
 ./setup-smw.sh install <MY-WIKI-PATH>
 }}}
 hint: you will see a sequence of shell command executed, they are essentially downloading the wiki codes from several Web hosts.
 
-4. install mediawiki using [http://www.mediawiki.org/wiki/Manual:Config_script MW setup instructions]. typically you will need to do the following
+5. install mediawiki using [http://www.mediawiki.org/wiki/Manual:Config_script MW setup instructions]. typically you will need to do the following
 {{{
 bash# cd <MY-WIKI-PATH>
 bash# chmod a+w config/
@@ -48,13 +56,13 @@ bash# chmod a+w config/
 mv config/LocalSettings.php .
 }}}
 
-5. to install SMW, do the following steps
+6. to install SMW, do the following steps
 
-5.1 append the following line to the end of LocalSettings.php
+6.1 append the following line to the end of LocalSettings.php
 {{{
 require_once( "extensions/SMWBP/LocalSettings.smwbp.smw.php" );  #SMW only
 }}}
-5.2 initialize SMW, see also http://semantic-mediawiki.org/wiki/Help:Installation SMW setup instructions
+6.2 initialize SMW, see also http://semantic-mediawiki.org/wiki/Help:Installation SMW setup instructions
 {{{
 login wiki with administrator account
 follow the link "special pages" (you can see a link on the left of the screen in toolbox)
@@ -64,24 +72,24 @@ click the button "initialize or upgrade database"
 }}}
 --hint: (i) create table and drop table is required by SMW initialization; (ii) alter table is required by SMW+ initialization.
 
-5.3 (optional) append the following line to the end of LocalSettings.php
+6.3 (optional) append the following line to the end of LocalSettings.php
 {{{
 require_once( "extensions/SMWBP/LocalSettings.smwbp.ext.php" );  #recommended MW ans SMW extensions
 }}}
 
-6. to install SMW with Halo Extensions 
+7. to install SMW with Halo Extensions 
 
-6.1 your wiki should be setup using setup-smwplus.sh
+7.1 your wiki should be setup using setup-smwplus.sh
 {{{
 ./setup-smwplus.sh install <MY-WIKI-PATH>
 }}}
-6.2 follow instructions in 5.1, 5.2, 5.3 
+7.2 follow instructions in 5.1, 5.2, 5.3 
 
-6.3 append the following line to the end of LocalSettings.php
+7.3 append the following line to the end of LocalSettings.php
 {{{
 require_once( "extensions/SMWBP/LocalSettings.smwbp.smwplus.php" );  #SMW+ halo extension
 }}}
-6.4 initialize halo extension
+7.4 initialize halo extension
 {{{
 login wiki with administrator account
 follow the link "special pages" (you can see a link on the left of the screen in toolbox)
