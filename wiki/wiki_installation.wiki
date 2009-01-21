@@ -31,12 +31,12 @@ svn checkout http://smwbp.googlecode.com/svn/trunk/install
 }}}
 OR update existing installation
 {{{
-svn checkout http://smwbp.googlecode.com/svn/trunk/install
+svn update install
 }}}
 
 3. copy setup scripts and make them executable
 {{{
-cp setup/*  .
+cp install/*  .
 chmod +x *.sh
 }}}
 hint: you may review the setup scripts at http://code.google.com/p/smwbp/source/browse/#svn/trunk/setup
