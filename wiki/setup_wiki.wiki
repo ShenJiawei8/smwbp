@@ -72,7 +72,7 @@ require_once( "extensions/SMWBP/LocalSettings.smwbp.mw.php" );  #MW only
 
 *C2*. follow instructions from *B2*
 
-*C3*. append the following line to the end of LocalSettings.php
+*C3*. append the following line to the end of {{{LocalSettings.php}}}
 {{{
 require_once( "extensions/SMWBP/LocalSettings.smwbp.mw.php" );  #MW only
 
@@ -114,7 +114,7 @@ see also
 
 *D2*. follow instructions from B2
 
-*D3*. append the following line to the end of LocalSettings.php
+*D3*. append the following line to the end of {{{LocalSettings.php}}}
 {{{
 require_once( "extensions/SMWBP/LocalSettings.smwbp.mw.php" );  #MW only
 
@@ -122,9 +122,10 @@ require_once( "extensions/SMWBP/LocalSettings.smwbp.smw.php" );  #SMW only
 enableSemantics("http://your.server.name", true);   # you need to update your.server.name with your server name
 
 require_once( "extensions/SMWBP/LocalSettings.smwbp.smwplus.php" );  #SMW+ halo extension
+enableSMWHalo();
 }}}
 
-*D4*. initialize SMWPLUS database (similar to C4) but the initialize button need to be run twice: the first time for SMW tables, and the second time for SMW+ tables.
+*D4*. follow instructions from C4 (initialize SMWPLUS database)
 
 *D5*. (optional) append the following line to the end of LocalSettings.php
 {{{
@@ -141,7 +142,9 @@ note:
 ./setup-smwrpi.sh install <MY-WIKI-PATH>
 }}}
 
-*E2*. follow instructions from D2-D5, and the added lines in LocalSettings are:
+*E2*. follow instructions from B2
+
+*E3*. append the following line to the end of {{{LocalSettings.php}}}
 {{{
 require_once( "extensions/SMWBP/LocalSettings.smwbp.mw.php" );  #MW only
 
@@ -149,18 +152,24 @@ require_once( "extensions/SMWBP/LocalSettings.smwbp.smw.php" );  #SMW only
 enableSemantics("http://your.server.name", true);   # you need to update your.server.name with your server name
 
 require_once( "extensions/SMWBP/LocalSettings.smwbp.smwplus.php" );  #SMW+ halo extension
+enableSMWHalo();
+}}}
 
+*E4*. follow instructions from C4 (initialize SMWPLUS database)
+
+*E5*. append the following line to the end of LocalSettings.php
+{{{
 require_once( "extensions/SMWBP/LocalSettings.smwbp.ext.php" );  #recommended MW ans SMW extensions
 require_once( "extensions/SMWBP/LocalSettings.smwbp.rpi.php" );  #More extensions
 }}}
 
-=Update Wiki=
-update installed component (let's use setup-smwrpi.sh as example)
+=Update Installed Wiki=
+Approach A. update installed component (let's use setup-smwrpi.sh as example)
 {{{
 ./setup-smwrpi.sh update <MY-WIKI-PATH>
 }}}
 
-OR update and then install newly added packages
+Approach B. update and then install packages newly added to setup script
 {{{
 ./setup-smwrpi.sh update <MY-WIKI-PATH>
 ./setup-smwrpi.sh install <MY-WIKI-PATH>
