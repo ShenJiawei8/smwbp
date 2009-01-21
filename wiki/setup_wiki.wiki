@@ -93,6 +93,9 @@ note:
 require_once( "extensions/SMWBP/LocalSettings.smwbp.ext.php" );  #recommended MW ans SMW extensions
 }}}
 
+see also
+ * http://semantic-mediawiki.org/wiki/Help:Configuration
+
 
 == D. Install Semantic MediaWiki with Halo Extension (SWM+)==
 *D1*. run script setup-smwplus.sh
