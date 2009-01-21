@@ -24,7 +24,7 @@ note: we only support linux with bash scripts
 
 = Installation =
 == A. Prepare setup scripts==
-*A1*. open a linux console, and create a directory for your wikis. Assume the root of www is /var/www/html. 
+*A1*. open a linux console, and create a directory for your wikis. Assume you will install wiki at directory /var/www/html/wiki
 {{{
 mkdir /var/www/html/wiki
 cd /var/www/html/wiki
