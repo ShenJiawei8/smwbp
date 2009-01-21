@@ -88,6 +88,11 @@ follow the link "Admin functions for Semantic MediaWiki"
 make sure the wiki's database account has additional "create table", "alter table" and "drop table" privilege on your wiki database.
 click the button "initialize or upgrade database" 
 }}}
+After a successful installation, you should see the following text at the bottom of screen
+{{{
+The storage engine was set up successfully.
+Return to Special:SMWAdmin
+}}}
 note:
  * create table and drop table is required by SMW initialization; 
  * alter table is required by SMW+ initialization.
@@ -160,3 +165,11 @@ OR update and then install newly added packages
 ./setup-smwrpi.sh update <MY-WIKI-PATH>
 ./setup-smwrpi.sh install <MY-WIKI-PATH>
 }}}
+
+=FAQ=
+ * frequent database issues when installing SWM
+  * you need to make sure your wiki db user has the following privileges
+    * "create,drop" (causing failure in SMW initialization), 
+    * "alter" (causing failure in SMW+ initialization)
+  * the name of your wiki database should not contain special characters, e.g. 
+    * '-' (causing failure in SMW+ initialization)
