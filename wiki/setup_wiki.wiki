@@ -54,6 +54,7 @@ hint: you will see a sequence of shell command executed, they are essentially do
 bash# cd <MY-WIKI-PATH>
 bash# chmod a+w config/
 ...goto your wiki url and use web interface to configure your wiki...
+...it is recommended to set database charset to "MySQL 4.1/5.0 UTF-8"
 mv config/LocalSettings.php .
 }}}
 
