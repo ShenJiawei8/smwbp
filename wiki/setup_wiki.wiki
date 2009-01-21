@@ -160,7 +160,7 @@ enableSMWHalo();
 *E5*. append the following line to the end of {{{LocalSettings.php}}}
 {{{
 require_once( "extensions/SMWBP/LocalSettings.smwbp.ext.php" );  #recommended MW ans SMW extensions
-require_once( "extensions/SMWBP/LocalSettings.smwbp.rpi.php" );  #More extensions
+require_once( "extensions/SMWBP/LocalSettings.smwbp.ext.rpi.php" );  #More extensions
 }}}
 
 =Update Installed Wiki=
