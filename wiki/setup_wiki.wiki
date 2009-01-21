@@ -1,4 +1,5 @@
 #summary how to setup SMW using shell script via SVN client
+#labels Featured,Phase-Deploy
 
 = Introduction =
 We write several shell scripts (bash) to help users install SMW using SVN client. Such installation allows users to (i) install the latest version of wiki codes and extensions, and (ii) update the installation with the latest patches distributed via SVN.
