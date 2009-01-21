@@ -48,22 +48,22 @@ chmod +x *.sh
 hint: you may review the setup scripts at http://code.google.com/p/smwbp/source/browse/#svn/trunk/setup
 
 == B. Install MediaWiki  (MW)==
-*B1*. execute one setup script to install a wiki at a directory, e.g. test
+*B1*. execute one setup script to install a wiki at a directory, e.g. test1
 {{{
-./setup-mw.sh install test
+./setup-mw.sh install test1
 }}}
 hint: you will see a sequence of shell command executed, they are essentially downloading the wiki codes from several Web hosts.
 
 *B2*. install mediawiki following [http://www.mediawiki.org/wiki/Manual:Config_script MW setup instructions]. Typically you need to do the following:
 {{{
-bash# cd <MY-WIKI-PATH>
+bash# cd test1
 bash# chmod a+w config/
 ...goto your wiki url and use web interface to configure your wiki...
 ...it is recommended to set database charset to "MySQL 4.1/5.0 UTF-8"
 mv config/LocalSettings.php .
 }}}
 
-*B3* append the following line to the end of LocalSettings.php
+*B3* append the following line to the end of {{{LocalSettings.php}}}
 {{{
 require_once( "extensions/SMWBP/LocalSettings.smwbp.mw.php" );  #MW only
 }}}
@@ -72,7 +72,7 @@ require_once( "extensions/SMWBP/LocalSettings.smwbp.mw.php" );  #MW only
 == C. Install Semantic MediaWiki  (SWM)==
 *C1*. run script setup-smw.sh
 {{{
-./setup-smw.sh install <MY-WIKI-PATH>
+./setup-smw.sh install test2
 }}}
 
 *C2*. follow instructions from *B2*
@@ -114,7 +114,7 @@ see also
 == D. Install Semantic MediaWiki with Halo Extension (SWM+)==
 *D1*. run script setup-smwplus.sh
 {{{
-./setup-smwplus.sh install <MY-WIKI-PATH>
+./setup-smwplus.sh install test3
 }}}
 
 *D2*. follow instructions from B2
