@@ -71,6 +71,11 @@ require_once( "extensions/SMWBP/LocalSettings.smwbp.mw.php" );  #MW only
 
 
 == C. Install Semantic MediaWiki  (SWM)==
+{{{
+WARNING: if you plan to install Halo extension (or near future), please go to section D.
+This installation script will install the latest SMW released via SVN,which may be incompatible with the current Halo extension release.
+}}} 
+
 *C1*. run script setup-smw.sh
 {{{
 ./setup-smw.sh install test2
@@ -113,6 +118,13 @@ see also
 
 
 == D. Install Semantic MediaWiki with Halo Extension (SWM+)==
+{{{
+NOTE: this installation uses the static version of SMW and SMW+
+* SMW 1.4.1
+* semantic result format 1.4.0
+* SMW+ 1.4.1
+}}} 
+
 *D1*. run script setup-halo-smwplus.sh
 {{{
 ./setup-halo-smwplus.sh install test3
