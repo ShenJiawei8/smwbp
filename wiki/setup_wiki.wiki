@@ -113,9 +113,9 @@ see also
 
 
 == D. Install Semantic MediaWiki with Halo Extension (SWM+)==
-*D1*. run script setup-smwplus.sh
+*D1*. run script setup-halo-smwplus.sh
 {{{
-./setup-smwplus.sh install test3
+./setup-halo-smwplus.sh install test3
 }}}
 
 *D2*. follow instructions from B2
@@ -142,32 +142,6 @@ require_once( "extensions/SMWBP/LocalSettings.smwbp.ext.php" );  #recommended MW
 note:
  * you may also check [http://smwforum.ontoprise.com/smwforum/index.php/Manual_SMW%2B_Installation SMW+ setup instructions]
 
-== E. Install Semantic MediaWiki (SWM-RPI configuration)==
-*E1*. run script setup-smwrpi.sh
-{{{
-./setup-smwrpi.sh install <MY-WIKI-PATH>
-}}}
-
-*E2*. follow instructions from B2
-
-*E3*. append the following line to the end of {{{LocalSettings.php}}}
-{{{
-require_once( "extensions/SMWBP/LocalSettings.smwbp.mw.php" );  #MW only
-
-require_once( "extensions/SMWBP/LocalSettings.smwbp.smw.php" );  #SMW only
-enableSemantics("http://your.server.name", true);   # you need to update your.server.name with your server name
-
-require_once( "extensions/SMWBP/LocalSettings.smwbp.smwplus.php" );  #SMW+ halo extension
-enableSMWHalo();
-}}}
-
-*E4*. follow instructions from C4 (initialize SMWPLUS database)
-
-*E5*. append the following line to the end of {{{LocalSettings.php}}}
-{{{
-require_once( "extensions/SMWBP/LocalSettings.smwbp.ext.php" );  #recommended MW ans SMW extensions
-require_once( "extensions/SMWBP/LocalSettings.smwbp.ext.rpi.php" );  #More extensions
-}}}
 
 =Update Installed Wiki=
 Approach A. update installed component (let's use setup-smwrpi.sh as example)
