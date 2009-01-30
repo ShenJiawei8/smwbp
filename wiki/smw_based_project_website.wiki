@@ -10,6 +10,15 @@ In what follows, we adopt software engineering process to develop the SMW-based 
 
 == Requirements Phase ==
 *data requirements*
+ the website should cover the following structured data
+ * project (description, key concepts, broad design)
+ * document (architecture)
+ * publication, presentation
+ * use_case
+ * faq
+ * software
+ * community, people, organization
+ * meetings, conference, event
 
 *UI requirements*
 
@@ -18,6 +27,9 @@ In what follows, we adopt software engineering process to develop the SMW-based 
 === Use Cases ===
 
 == Design Phase ==
+principles:
+ * focus on frequently used concepts, but allow extension (adding new attribute, new class)
+
 === Data Organization ===
 
 === User Interaction ===
