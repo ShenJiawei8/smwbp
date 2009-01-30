@@ -23,7 +23,7 @@ In what follows, we adopt software engineering process to develop the SMW-based 
  * agent
    * community
    * people
-    * organization
+   * organization
  * event
    * meetings
    * conference
