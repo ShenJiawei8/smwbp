@@ -20,6 +20,7 @@ In what follows, we adopt software engineering process to develop the SMW-based 
      * use_case
      * faq
    * software
+   * dataset
  * agent
    * community
    * people
@@ -29,6 +30,13 @@ In what follows, we adopt software engineering process to develop the SMW-based 
    * conference
 
 *UI requirements*
+  originally 'section'
+   * project
+   * data
+   * community
+    * people
+    * data provider
+
 
 *performance requirements*
 
