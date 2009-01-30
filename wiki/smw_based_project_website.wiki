@@ -1,0 +1,30 @@
+#summary build a semantic mediawiki(SMW) based general-purposed project website
+#labels Phase-Design,application
+
+= Introduction =
+There are few efforts, if any, on building a open source and community supported project website. While content management systems (CMSs) can be customized for project, they are typically quite restricted. While they can provide 80% features for a project website, it is typically quite hard to add more features to them because of their rigid database schema. Semantic Mediawiki offers flexible relational modeling capability to enable smooth integration of predefined common database scheme and project-specific customization. In this project, we would like to realized this approach and share our experiences. 
+
+
+= System Development =
+In what follows, we adopt software engineering process to develop the SMW-based general purposed project website.
+
+== Requirements Phase ==
+*data requirements*
+
+*UI requirements*
+
+*performance requirements*
+
+=== Use Cases ===
+
+== Design Phase ==
+=== Data Organization ===
+
+=== User Interaction ===
+
+=== Technology Stack ===
+
+== Implementation Phase ==
+
+
+= Task Management =
