@@ -10,15 +10,23 @@ In what follows, we adopt software engineering process to develop the SMW-based 
 
 == Requirements Phase ==
 *data requirements*
- the website should cover the following structured data
- * project (description, key concepts, broad design)
- * document (architecture)
- * publication, presentation
- * use_case
- * faq
- * software
- * community, people, organization
- * meetings, conference, event
+ class hierarchy
+ * thing
+   * project (description, key concepts, broad design)
+   * document 
+     * design document?
+     * publication 
+     * presentation
+     * use_case
+     * faq
+   * software
+ * agent
+   * community
+   * people
+    * organization
+ * event
+   * meetings
+   * conference
 
 *UI requirements*
 
