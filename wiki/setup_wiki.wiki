@@ -50,7 +50,7 @@ hint: you may review the setup scripts at http://code.google.com/p/smwbp/source/
 == B. Install MediaWiki  (MW)==
 *B1*. execute one setup script to install a wiki at a directory, e.g. test1
 {{{
-./setup-mw.sh install test1
+./setup-mw.sh test1
 }}}
 hint: you will see a sequence of shell command executed, they are essentially downloading the wiki codes from several Web hosts.
 
@@ -78,7 +78,7 @@ This installation script will install the latest SMW released via SVN,which may 
 
 *C1*. run script setup-smw.sh
 {{{
-./setup-smw.sh install test2
+./setup-smw.sh test2
 }}}
 
 *C2*. follow instructions from *B2*
@@ -127,7 +127,7 @@ NOTE: this installation uses the static version of SMW and SMW+
 
 *D1*. run script setup-halo-smwplus.sh
 {{{
-./setup-halo-smwplus.sh install test3
+./setup-halo-smwplus.sh test3
 }}}
 
 *D2*. follow instructions from B2
@@ -156,15 +156,8 @@ note:
 
 
 =Update Installed Wiki=
-Approach A. update installed component (let's use setup-smwrpi.sh as example)
 {{{
-./setup-smwrpi.sh update <MY-WIKI-PATH>
-}}}
-
-Approach B. update and then install packages newly added to setup script
-{{{
-./setup-smwrpi.sh update <MY-WIKI-PATH>
-./setup-smwrpi.sh install <MY-WIKI-PATH>
+./setup-smwrpi.sh <MY-WIKI-PATH>
 }}}
 
 =FAQ=
