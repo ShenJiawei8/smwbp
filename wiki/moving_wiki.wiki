@@ -1,7 +1,7 @@
 #summary how to move the content and images from one wiki to the other
 
 = move images =
-1. 
+1. dump all images from wiki record
 {{{
 cd ONEWIKI
 php maintenance/dumpUploads.php > list.txt
