@@ -167,3 +167,9 @@ note:
     * "alter" (causing failure in SMW+ initialization)
   * the name of your wiki database should not contain special characters, e.g. 
     * '-' (causing failure in SMW+ initialization)
+  * there are some character encoding issues caused when using non-latin charset, you may consider adding the following lines to mysql configuration 'my.cnf'
+{{{
+default-character-set=utf8
+character-set-server = utf8
+collation-server = utf8_general_ci
+}}}
