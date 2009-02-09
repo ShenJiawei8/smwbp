@@ -40,7 +40,7 @@ sub-projects
 
  * documents
   * http://tw.rpi.edu/portal/Help:MediaWiki mediawiki tutorial
-  * http://tw.rpi.edu/portal/Help:SemanticMediaWiki semantic mediawiki tutorial
+  * http://tw.rpi.edu/portal/Help:Semantic_MediaWiki semantic mediawiki tutorial
 
  * project website
   * [smw_based_project_website] -- the design document
