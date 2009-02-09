@@ -16,44 +16,39 @@ sub-projects
  
 = tasks =
 == todo ==
-management
- * release and backup plan
+ * management
+  * release and backup plan
 
-wiki extensions
- * need a carefully checked access control extension for restricted page access 
+ * wiki extensions
+  * need a carefully checked access control extension for restricted page access 
 
-wiki templates
- * clean up wiki templates
+ * wiki templates
+  * clean up wiki templates
 
-documents
+ * documents
 
-project website
+ * project website
 
-new tw group website 
 
 ==inprogress==
-management
-* http://code.google.com/p/smwbp/  -- project website 
+ * management
+  * http://code.google.com/p/smwbp/  -- project website 
 
-wiki extensions
- * http://tw2.tw.rpi.edu/wiki/r2d2/Help:SemanticToolkit -- add convenient tools 
-  * need a brief discussion
+ * wiki extensions
+  * http://tw2.tw.rpi.edu/wiki/r2d2/Help:SemanticToolkit -- add convenient tools 
+   * need a brief discussion
 
-documents
- * http://tw.rpi.edu/portal/Help:MediaWiki mediawiki tutorial
- * http://tw.rpi.edu/portal/Help:SemanticMediaWiki semantic mediawiki tutorial
+ * documents
+  * http://tw.rpi.edu/portal/Help:MediaWiki mediawiki tutorial
+  * http://tw.rpi.edu/portal/Help:SemanticMediaWiki semantic mediawiki tutorial
 
-project website
- * [smw_based_project_website] -- the design document
+ * project website
+  * [smw_based_project_website] -- the design document
 
-new tw group website
- * http://tw2.tw.rpi.edu/wiki/tw -- the development site
- * http://tw2.tw.rpi.edu/wiki/tw/index.php/tw:Admin
- * password protected
 
 ==done==
-management
- * [setup_wiki] -- wiki setup scripts
+ * management
+  * [setup_wiki] -- wiki setup scripts
 
-wiki extensions
- * http://www.mediawiki.org/wiki/Extension:ArrayExtension -- add array data structure to wiki
+ * wiki extensions
+  * http://www.mediawiki.org/wiki/Extension:ArrayExtension -- add array data structure to wiki
