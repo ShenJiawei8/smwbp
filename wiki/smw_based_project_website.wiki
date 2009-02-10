@@ -14,11 +14,12 @@ In what follows, we adopt software engineering process to develop the SMW-based 
  * thing
    * project (description, key concepts, broad design)
    * document 
-     * design document?
      * publication 
      * presentation
-     * use_case
+     * news
      * faq
+     * use_case
+     * design document?
    * software
    * dataset
  * agent
