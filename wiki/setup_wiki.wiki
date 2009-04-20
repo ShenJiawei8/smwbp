@@ -47,7 +47,7 @@ chmod +x *.sh
 }}}
 hint: you may review the setup scripts at http://code.google.com/p/smwbp/source/browse/#svn/trunk/setup
 
-== B. Install MediaWiki  (MW)==
+== B. Install MediaWiki 1.13 (MW)==
 *B1*. execute one setup script to install a wiki at a directory, e.g. test1
 {{{
 ./setup-mw.sh test1
@@ -70,15 +70,16 @@ require_once( "extensions/SMWBP/LocalSettings.smwbp.mw.php" );  #MW only
 }}}
 
 
-== C. Install Semantic MediaWiki  (SWM)==
+== C. Install the latest Active Semantic MediaWiki  (SWM)==
 {{{
 WARNING: if you plan to install Halo extension (or near future), please go to section D.
 This installation script will install the latest SMW released via SVN,which may be incompatible with the current Halo extension release.
 }}} 
 
-*C1*. run script setup-smw.sh
+*C1*. run scripts 
 {{{
-./setup-smw.sh test2
+./setup-svn-smw.sh test2
+./setup-svn-ext.sh test2
 }}}
 
 *C2*. follow instructions from *B2*
@@ -117,18 +118,18 @@ see also
  * http://semantic-mediawiki.org/wiki/Help:Configuration
 
 
-== D. Install Semantic MediaWiki with Halo Extension (SWM+)==
+== D. Install Static Semantic MediaWiki with Halo Extension (SWM+)==
 {{{
-NOTE: this installation uses the static version of SMW and SMW+
-* SMW 1.4.1
-* semantic result format 1.4.0
-* SMW+ 1.4.1
+NOTE: there are two setup packages
+1. MW 1.13, SMW 1.4.1, semantic result format 1.4.0,  SMW+ 1.4.1
+2. MW 1.14, SMW 1.4.2, semantic result format 1.4.2,  SMW+ 1.4.2
 }}} 
 
-*D1*. run script setup-halo-smwplus.sh
+*D1*. run script 
 {{{
-./setup-halo-smwplus.sh test3
+./setup-smw-1.4.2.sh test3
 }}}
+Note: alternatively, use "./setup-smw-1.4.1.sh test3"
 
 *D2*. follow instructions from B2
 
