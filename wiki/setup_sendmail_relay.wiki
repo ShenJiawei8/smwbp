@@ -82,7 +82,7 @@ FEATURE(masquerade_envelope)dnl
 insert the following lines after that line
 {{{
 FEATURE(`genericstable')dnl
-GENERICS_DOMAIN(`<domain-name-of-local-server')dnl
+GENERICS_DOMAIN(`domain-name-of-local-server')dnl
 }}}
 
 4. make the file /etc/mail/sendmail.cf
