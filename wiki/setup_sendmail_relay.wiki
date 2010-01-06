@@ -55,7 +55,7 @@ m4 /etc/mail/sendmail.mc > /etc/mail/sendmail.cf
 }}}
 
 == Rewrite Email Header ==
-This step is needed only because some relay SMTP servers does check the from filed in email for security reasons. In our case, apache was not recognized as a valid user on the relay SMTP server, therefore, we rewrite the header of emails sent by apache to a valid user name {SMTP-RELAY-USER-NAME> which is known by the relay {SMTP-RELAY> server. It is also notable that this will help us to enable a valid reply address. 
+This step is needed only because some relay SMTP servers does check the from filed in email for security reasons. In our case, apache was not recognized as a valid user on the relay SMTP server, therefore, we rewrite the header of emails sent by apache to a valid user name {SMTP-RELAY-USER-NAME} which is known by the relay {SMTP-RELAY} server. It is also notable that this will help us to enable a valid reply address. 
 
 1. Edit /etc/mail/genericstable  (this file may not exist)
 {{{
