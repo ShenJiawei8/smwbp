@@ -1,4 +1,4 @@
-#summary how to setup Semantic MediaWiki 1.5.3
+#summary how to setup Semantic MediaWiki 1.5.3 for linked data publishing
 
 =Prerequisites=
 1. make sure if your system meets [http://www.mediawiki.org/wiki/Installation the requirements of mediawiki installation]
